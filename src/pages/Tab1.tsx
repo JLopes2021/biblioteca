@@ -17,7 +17,7 @@ const Tab1: React.FC = () => {
   return (
     <IonPage>
       <IonHeader>
-        <IonToolbar color="primary">
+        <IonToolbar color="terciary">
           <IonButtons slot="start">
             <IonMenuButton></IonMenuButton>
           </IonButtons>
@@ -72,3 +72,5 @@ const Tab1: React.FC = () => {
 };
 
 export default Tab1;
+
+
