@@ -1,6 +1,6 @@
 /* Tab1.css */
 .content {
-  background-color: #020427;
+  background-color: #000108;
 }
 
 ul {
@@ -15,7 +15,7 @@ li {
   width: 48%;
   margin-bottom: 20px;
   cursor:grab;
-  border: 1px solid #08ed4d;
+  border: 1px solid #ffffff;
   border-radius: 5px;
   padding: 10px;
   transition: transform 0.3s;
@@ -38,9 +38,12 @@ li:hover {
 }
 
 .title {
+  text-align: center;
   font-weight: bold;
+  font-style: italic;
 }
 
 .author {
-  color: #666;
+  text-align: center;
+  color: #2cff06;
 }
