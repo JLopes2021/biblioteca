@@ -14,10 +14,16 @@ Fique à vontade para contribuir a qualquer momento. Basta fazer um pull request
 [Link para o Trello](https://trello.com/c/uBAh418u/1-criar-o-esqueleto-inicial-do-projeto) - Acompanhe o desenvolvimento pelo Trello.
 
 # Telas APP
+
 ## Telas Iphone
+
 ![Tela Inicial Iphone](image.png) 
+*Descrição: Esta é a tela inicial da versão para iPhone.*
+
 ## Telas Android
+
 ![Tela Inicial Android](image-1.png)
+*Descrição: Esta é a tela inicial da versão para Android.*
 
 ## Histórico de Mudanças (Changelog)
 - O projeto, que antes era para leitura de livros, agora é destinado para fazer reservas de livros.
