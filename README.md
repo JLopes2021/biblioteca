@@ -13,6 +13,10 @@ Fique à vontade para contribuir a qualquer momento. Basta fazer um pull request
 
 [Link para o Trello](https://trello.com/c/uBAh418u/1-criar-o-esqueleto-inicial-do-projeto) - Acompanhe o desenvolvimento pelo Trello.
 
+## Telas
+![Tela Inicial Iphone](image.png)
+![Tela Inicial Android](image-1.png)
+
 ## Histórico de Mudanças (Changelog)
 - O projeto, que antes era para leitura de livros, agora é destinado para fazer reservas de livros.
 - Agora é possível buscar livros na página inicial.

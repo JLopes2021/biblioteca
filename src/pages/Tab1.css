@@ -47,3 +47,39 @@ li:hover {
   text-align: center;
   color: #2cff06;
 }
+
+/* Tab1.css */
+
+.search-container {
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 3vh;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: #66CCFF; /* Cor de destaque ao focar no campo de busca */
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  background-color: #003366; /* Cor do botão de busca */
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #66CCFF; /* Cor de destaque ao passar o mouse sobre o botão */
+}
