@@ -13,10 +13,10 @@ Fique à vontade para contribuir a qualquer momento. Basta fazer um pull request
 
 [Link para o Trello](https://trello.com/c/uBAh418u/1-criar-o-esqueleto-inicial-do-projeto) - Acompanhe o desenvolvimento pelo Trello.
 
-## Telas
-**Telas Iphone**
-![Tela Inicial Iphone](image.png)
-**Telas Android**
+# Telas APP
+## Telas Iphone
+![Tela Inicial Iphone](image.png) 
+## Telas Android
 ![Tela Inicial Android](image-1.png)
 
 ## Histórico de Mudanças (Changelog)
