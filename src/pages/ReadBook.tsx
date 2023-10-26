@@ -5,9 +5,13 @@ import books from './BooksData';
 
 const ReadBook: React.FC = () => {
   let { id } = useParams<{ id: string }>();
-  let { author } = useParams<{ author: string }>();
   
-  // Agora 'id' contém o ID do livro que foi passado na URL
+  // Encontre o livro correspondente com base no ID
+  const selectedBook = books.find(book => book.id === id);
+
+  if (!selectedBook) {
+    return <div>Livro não encontrado</div>;
+  }
 
   return (
     <IonPage>
@@ -17,12 +21,13 @@ const ReadBook: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <p>Você está lendo o livro com o ID: {id}</p>
-        <p>Você está lendo o livro com o Autor: {author}</p>
-
-        <ul>
-        </ul>
-           
+        <h2>{selectedBook.title}</h2>
+        <p>Autor: {selectedBook.author}</p>
+        <p>Descrição: {selectedBook.description}</p>
+        <p>Gênero: {selectedBook.genre}</p>
+        <p>Ano de Publicação: {selectedBook.publicationYear}</p>
+        <p>Idioma: {selectedBook.language}</p>
+        <p>Número de Páginas: {selectedBook.pageCount}</p>
       </IonContent>
     </IonPage>
   );

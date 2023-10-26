@@ -1,4 +1,7 @@
 /* Tab1.css */
+.content {
+  background-color: #020427;
+}
 
 ul {
   list-style: none;
@@ -11,14 +14,13 @@ ul {
 li {
   width: 48%;
   margin-bottom: 20px;
-  cursor: pointer;
-  background-color: #fff;
-  border: 1px solid #ccc;
+  cursor:grab;
+  border: 1px solid #08ed4d;
   border-radius: 5px;
   padding: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
+
 
 li:hover {
   transform: scale(1.02);
@@ -30,9 +32,9 @@ li:hover {
 }
 
 .thumbnail-container img {
-  max-width: 100px;
-  max-height: 150px;
-  border-radius: 5px;
+  max-width: 35vh;
+  max-height: 15vh;
+  border-radius: 3px;
 }
 
 .title {
