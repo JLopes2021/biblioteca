@@ -10,6 +10,8 @@ const Tab1: React.FC = () => {
   const goToReadBook = (bookId: string) => {
     history.push(`/ler-livro/${bookId}`);
   }
+  const sortedBooks = [...books].sort((a, b) => a.title.localeCompare(b.title));
+
   
   return (
     <IonPage>
@@ -19,29 +21,28 @@ const Tab1: React.FC = () => {
         </IonToolbar>
       </IonHeader>
       <IonContent>
-        <div className="content">
-          <IonGrid>
-            <IonRow>
-              <IonCol size="12">
-                <ul>
-                  {books.map(book => (
-                    <li key={book.id} onClick={() => goToReadBook(book.id)} className="book">
-                      <div>
-                        <div className="thumbnail-container">
-                          <img src={book.imagem} alt={book.title} />
-                        </div>
-                        <div className="title">{book.title}</div>
-                        <div className="author">{book.author}</div>
+      <div className="content">
+        <IonGrid>
+          <IonRow>
+            <IonCol size="12">
+              <ul>
+                {sortedBooks.map(book => (
+                  <li key={book.id} onClick={() => goToReadBook(book.id)} className="book">
+                    <div>
+                      <div className="thumbnail-container">
+                        <img src={book.image} alt={book.title} />
                       </div>
-                    </li>
-                  ))}
-                </ul>
-              </IonCol>
-            </IonRow>
-          </IonGrid>
-        </div>
-      </IonContent>
-    </IonPage>
+                      <div className="title">{book.title}</div>
+                      <div className="author">{book.author}</div>
+                    </div>
+                  </li>
+                ))}
+              </ul>
+            </IonCol>
+          </IonRow>
+        </IonGrid>
+      </div>
+    </IonContent>    </IonPage>
   );
 };
 

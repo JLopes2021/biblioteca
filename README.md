@@ -2,8 +2,6 @@
 
 Um sistema simples para gerenciar uma biblioteca, incluindo funcionalidades para adicionar, remover e pesquisar livros.
 
-## Índice (Opcional)
-
 ## Instalação
 Instruções sobre como instalar e configurar o projeto.
 
@@ -16,10 +14,11 @@ Para utilizar basta clicar na pagina do livro correspondente, caso queira ver a 
 Faça um pull a hora que quiser contribuir 
 
 ## Documentação Adicional
-(Links ou referências para documentação mais detalhada, se houver.)
+Sobre as imagens: Nesse projeto utilizamos apenas imagens de domínio público
+Informações dos livros: As fichas técnicas são inspiradas em bíbliotecas de domínio público
 
 ## Histórico de Mudanças (Changelog)
-(Se houver, liste versões anteriores do projeto com principais alterações.)
+O projeto que antes era para ler os livros, agora ele será para fazer reservas de livro
 
 ## Licença
 MIT
