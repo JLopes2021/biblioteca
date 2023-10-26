@@ -1,0 +1,87 @@
+/* Tab1.css */
+.content {
+    color: var(--ion-background-color);
+    padding: 20px;
+  }
+  
+  .search-container {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 3vh;
+    outline: none;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #66CCFF;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .book {
+    width: 48%;
+    margin-bottom: 20px;
+    cursor: grab;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    padding: 10px;
+    transition: transform 0.3s;
+    text-decoration: none;
+    position: relative;
+  }
+  
+  .book:hover {
+    transform: scale(1.02);
+  }
+  
+  .thumbnail-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .thumbnail-container img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 3px;
+  }
+  
+  .title {
+    text-align: center;
+    font-weight: bold;
+    font-style: italic;
+  }
+  
+  .author {
+    text-align: center;
+    color: #2cff06;
+  }
+  
+  /* Badge para o número do livro */
+  ion-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+  /* Tab1.css */
+  
+  .ionItem{
+    background-color: #2cff06;
+  }
+
+  .IonFooter, h1{
+    
+  }

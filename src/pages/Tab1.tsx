@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonGrid, IonRow, IonCol, IonButtons, IonMenuButton, IonButton, IonIcon } from '@ionic/react';
+import { IonContent, IonFooter,IonBadge, IonHeader, IonPage, IonTitle, IonToolbar, IonGrid, IonRow, IonCol, IonButtons, IonMenuButton, IonButton, IonIcon } from '@ionic/react';
 import { useHistory } from 'react-router-dom';
 import books from './BooksData'; // Importe a constante books
-import './Tab1.css';
+import './App.css';
 import { search, person } from 'ionicons/icons'; // Importando os ícones
+import DataTime from '../components/DataTime';
 
 const Tab1: React.FC = () => {
   const history = useHistory();
@@ -23,14 +24,14 @@ const Tab1: React.FC = () => {
           </IonButtons>
           <IonTitle>Biblioteca</IonTitle>
           <IonButtons slot="end">
-              <div className="search-container">
-                  <input
-                    type="text"
-                    value={searchTerm}
-                    onChange={(e) => setSearchTerm(e.target.value)}
-                    placeholder="Buscar livros..."
-                  />
-                </div>
+            <div className="search-container">
+              <input
+                type="text"
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                placeholder="Buscar livros..."
+              />
+            </div>
             <IonButton routerLink="/profile">
               <IonIcon slot="icon-only" icon={person}></IonIcon>
             </IonButton>
@@ -43,7 +44,7 @@ const Tab1: React.FC = () => {
           <IonGrid>
             <IonRow>
               <IonCol size="12">
-               
+
                 <ul>
                   {sortedBooks
                     .filter(book =>
@@ -57,6 +58,7 @@ const Tab1: React.FC = () => {
                           </div>
                           <div className="title">{book.title}</div>
                           <div className="author">{book.author}</div>
+                          <IonBadge slot="start">{book.id}</IonBadge>
                         </div>
                       </li>
                     ))
@@ -66,6 +68,13 @@ const Tab1: React.FC = () => {
             </IonRow>
           </IonGrid>
         </div>
+        <IonFooter>
+        <IonToolbar>
+          <div>
+            <h1>Footer</h1>
+          </div>
+        </IonToolbar>
+      </IonFooter>
       </IonContent>
     </IonPage>
   );
